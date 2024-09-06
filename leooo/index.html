@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Simples</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000000;
+            color: #ffffff;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #a0ebd8;
+            color: rgb(0, 0, 0);
+            padding: 10px 0;
+        }
+        main {
+            padding: 20px;
+        }
+        footer {
+            background-color: #a0ebd8;
+            color: rgb(0, 0, 0);
+            padding: 10px 0;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+        }
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #a0ebd8;
+            color: rgb(0, 0, 0);
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #7cccb8;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo à Página Simples</h1>
+    </header>
+    <main>
+        <p>Esta é uma página de exemplo servida por um servidor Node.js.</p>
+        <button onclick="showAlert()">Clique em mim!</button>
+    </main>
+    <footer>
+        <p>&copy; 2024 Minha Página Simples</p>
+    </footer>
+    <script>
+        function showAlert() {
+            alert('Você clicou no botão!');
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
